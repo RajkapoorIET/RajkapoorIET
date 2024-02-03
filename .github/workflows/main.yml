@@ -1,0 +1,7 @@
+---
+on:
+  workflow_dispatch: null
+  fork: null
+  member:
+    name: deploy to staging
+    runs-on: windows-latest
