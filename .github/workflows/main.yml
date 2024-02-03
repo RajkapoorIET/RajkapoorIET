@@ -1,7 +1,8 @@
----
-on:
-  workflow_dispatch: null
-  fork: null
-  member:
-    name: deploy to staging
-    runs-on: windows-latest
+name: Demo Python Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: window-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.10", "3.12"]
