@@ -1,9 +1,8 @@
-'on':
+---
+on:
   - push
 jobs:
-  build: null
-  name: Hello world
-  runs-on: ubuntu-latest
+  runs-on: window-latest
   steps:
     - uses: actions/checkout@v2
     - name: Write a multi-line message
