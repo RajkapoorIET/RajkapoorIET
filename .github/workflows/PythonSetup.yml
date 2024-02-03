@@ -2,7 +2,7 @@ name: Python package
 on:
   - push
 jobs:
-  runs-on: window-latest
+  runs-on: windows-latest
   steps:
     - uses: actions/checkout@v4
     - name: Set up Python
