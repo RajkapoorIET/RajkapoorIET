@@ -1,0 +1,8 @@
+name: Demo Python Workflow
+on: [push]
+jobs:
+  build:
+    runs-on: window-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.10", "3.12"]
